@@ -22,12 +22,17 @@ $stmt->execute($params);
 $umkms = $stmt->fetchAll();
 ?>
 
-<div class="ios-navbar-top">
+<div class="ios-navbar-top" style="display: flex; justify-content: space-between; align-items: center;">
     <div>
         <span class="subtitle">Kuliner KPAD</span>
         <h1>Eksplorasi</h1>
     </div>
+    <a href="umkm_create.php" class="ios-btn ios-btn-icon-only" style="border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+        <i class="bi bi-plus-lg" style="font-size: 1.5rem;"></i>
+    </a>
 </div>
+
+<form method="GET">
 
 <form method="GET">
     <div class="ios-input-group">
